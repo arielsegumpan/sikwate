@@ -1,0 +1,156 @@
+$prim: #1D1512;
+$sec: #814B2B;
+$success : #95654A;
+
+$black: #0C0C0C;
+$dark-brown: #481E14;
+$brown: #9B3922;
+$light-brown: #9B3922;
+
+
+*{
+  -webkit-font-smoothing: antialiased!important;
+  -moz-osx-font-smoothing: grayscale!important;
+}
+
+
+.libre-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .libre-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 900
+
+.source-regular {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.source-fw-bold {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+// Extra Small devices (landscape phones, 375px and up)
+@media (min-width: 375px) { 
+
+  // HOME PAGE
+  header#main_head{
+    height: 100svh;
+    width: 100%;
+
+    .header_main_nav{
+      z-index: 10;
+      position:relative;
+      width: 100%;
+    }
+
+    .overlay-bg, img.img_header{
+      width: 100%;
+      height: 100svh;
+    }
+
+    .overlay-bg{
+      width: 100%;
+      height: 100svh;
+      background-color: rgba($color: $black, $alpha: .8);
+      z-index: -1;
+    }
+    img.img_header{
+      object-fit: cover;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -2;
+    }
+
+    .hero-img{
+      width: 100%;
+      height: 100svh;
+      .container  
+      {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+  }
+
+  main{
+    section#cacao{
+      img#cacao_img{
+        width: 400px;
+        height: auto;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+  
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+  
+ }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+  
+ }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { 
+  // HOME PAGE
+  header#main_head{
+    height: 100svh;
+
+    .overlay-bg, img.img_header{
+      height: 100svh;
+    }
+
+    .overlay-bg{
+      height: 100svh;
+    }
+ 
+    .hero-img{
+      height: 100svh;
+    }
+  }
+
+  main{
+    section#cacao{
+      height: 50svh;
+      img#cacao_img{
+        width: 900px;
+        top: -25rem;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+ }
