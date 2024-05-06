@@ -6,6 +6,7 @@ $black: #0C0C0C;
 $dark-brown: #481E14;
 $brown: #9B3922;
 $light-brown: #9B3922;
+$choco-light : #ece3e3;
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../../node_modules/bootstrap/scss/functions";
@@ -48,6 +49,7 @@ $custom-colors: (
   "dark-brown" : $dark-brown,
   "brown" : $brown,
   "light-brown" : $light-brown,
+  "choco-light" : $choco-light
 );
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
@@ -66,7 +68,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "../../node_modules/bootstrap/scss/utilities";
 @import "../../node_modules/bootstrap/scss/reboot";
 @import "../../node_modules/bootstrap/scss/type";
-// @import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/images";
 @import "../../node_modules/bootstrap/scss/containers";
 @import "../../node_modules/bootstrap/scss/grid";
 @import "../../node_modules/bootstrap/scss/helpers";
