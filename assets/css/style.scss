@@ -7,37 +7,34 @@ $dark-brown: #481E14;
 $brown: #9B3922;
 $light-brown: #9B3922;
 $bg-light:#ece3e3;
+$trans: .6s ease;
 *{
   -webkit-font-smoothing: antialiased!important;
   -moz-osx-font-smoothing: grayscale!important;
 
-  .libre-regular {
-    font-family: "Libre Baskerville", serif;
+  .lora{
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .pop-regular {
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
   
-  .libre-italic {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: italic;
+  .pop-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
   }
-
-  // <uniquifier>: Use a unique and descriptive class name
-  // <weight>: Use a value from 200 to 900
-
-  .source-regular {
-      font-family: "Source Sans 3", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 400;
-      font-style: normal;
-  }
-
-  .source-fw-bold {
-    font-family: "Source Sans 3", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: italic;
+  
+  .pop-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
   }
 
   .dropdown-toggle::after {
@@ -50,40 +47,179 @@ $bg-light:#ece3e3;
     border-bottom: 0!important;
     border-left: 0!important;
   }
+
+  body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  }
 }
 
 // Extra Small devices (landscape phones, 375px and up)
 @media (min-width: 375px) { 
   header{
-    nav{
-      .container{
-        border-bottom: 1px solid rgba($color: $success, $alpha: .2);
-      }
-    }
+    z-index: 10;
+    // nav{
+    //   .container{
+    //     border-bottom: 1px solid rgba($color: $success, $alpha: .2);
+    //   }
+    // }
   }
   main{
     // HOME PAGE
     section#jumbotron{
-      padding-top: 2.6rem;
-      height: calc(100svh - 96px);
-      img{
-        height: 55svh;
+      // padding-top: 2.6rem;
+      // height: calc(110svh - 96px);
+      height: 100svh;
+
+      img.bg-jumb-img{
+        height: 100svh;
         width: 100%;
         object-fit: cover;
+        opacity: .05;
+      }
+
+      img.jumb-img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        background-position: center;
+      }
+      .container{
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -43%);
       }
     }
 
     // --PROD FEAT
     section#prod-feat{
-      padding: 5rem 0;
+      padding: 7rem 0;
 
       img{
         width: 100%;
         height: 300px;
         object-fit: cover;
       }
+
+      .row:nth-child(3){
+        padding: 6rem 0 0 0;
+      }
+
+
+      .card.feat-card {
+        position: relative;
+        z-index: 1;
+        transition:$trans;
+        overflow: hidden;
+    
+        h5 {
+          position: relative;
+          z-index: 2; // Ensure the text is above the overlay
+          transition:$trans;
+          transform: translateY(120%);
+        }
+
+        i.bi.bi-eye {
+            transition:$trans;
+            opacity: 0;
+            z-index: 2;
+            position: relative;
+        }
+    
+        &::before {
+            content: '';
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0;
+            transition:$trans;
+        }
+      }
+      
+      .card.feat-card:hover {
+          &::before {
+              opacity: 1;
+          }
+      
+          i.bi.bi-eye {
+              opacity: 1;
+          }
+
+          h5{
+            transform: translateY(0);
+          }
+      }
+    
+    }
+
+    // SERVICES 
+    section#services{
+      padding: 7rem 0 7rem 0;
+      span{
+        img{
+          width: auto;
+          height: 70px;
+        }
+      }
+      .card{
+        img{
+          width: auto;
+          height: 50px;
+
+        }
+      }
+
+      .row:nth-child(2){
+        padding: 1rem 0 0 0;
+      }
+    }
+
+    // BLOG
+    section#blog{
+      padding: 10rem 0;
+    }
+
+    // NEWSLETTER 
+    section#newsletter{
+      padding: 8rem 0;
+    }
+
+
+    // PRODUCTS --------------------------------->
+    section#jumb {
+      padding-top: 2.6rem;
+      // height: calc(50svh - 96px);
+      height: 50svh;
+      position: relative;
+      
+      .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+      }
+    }
+   
+
+    // 
+    section#our-products{
+      padding: 7rem 0;
     }
   }
+
+   // FOOTER
+   footer{
+    // padding: 5rem 0 0 0;
+
+    .container{
+      padding: 9rem 0;
+    }
+  }
+
 }
 
 

@@ -7,6 +7,7 @@ $dark-brown: #481E14;
 $brown: #9B3922;
 $light-brown: #9B3922;
 $choco-light : #ece3e3;
+$green: #00b268;
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../../node_modules/bootstrap/scss/functions";
@@ -34,6 +35,10 @@ $dropdown-link-active-bg:  $sec!default;
 
 $form-check-input-checked-bg-color: $prim;
 $form-check-input-checked-border-color: $prim;
+$list-group-bg: $choco-light;
+$list-group-border-color: rgba($color: #cbb3a5, $alpha: .5)!default;
+
+$breadcrumb-divider-color: $choco-light;
 
 // $table-striped-bg: $lteal; 
 
@@ -41,6 +46,7 @@ $theme-colors:(
     "primary": $prim,
     "secondary" : $sec,
     "success": $success,
+    "warning" : #f36726d4,
 );
 
 
@@ -49,7 +55,8 @@ $custom-colors: (
   "dark-brown" : $dark-brown,
   "brown" : $brown,
   "light-brown" : $light-brown,
-  "choco-light" : $choco-light
+  "choco-light" : $choco-light,
+  "green" : $green
 );
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
@@ -83,8 +90,9 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "../../node_modules/bootstrap/scss/forms";
 @import "../../node_modules/bootstrap/scss/close";
 @import "../../node_modules/bootstrap/scss/tables";
+@import "../../node_modules/bootstrap/scss/modal";
 @import "../../node_modules/bootstrap/scss/pagination";
-
+@import "../../node_modules/bootstrap/scss/breadcrumb";
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "../../node_modules/bootstrap/scss/utilities/api";
 
