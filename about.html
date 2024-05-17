@@ -1,389 +1,183 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sikwate - Chokolate De San Isidro</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Source+Sans+3:wght@200..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
-    <header id="main_head" class="position-relative">
-        <img src="assets/imgs/cacao_seed_2.jpg" alt="" class="img_header position-absolute">
-        <div class="overlay-bg position-absolute"></div>
 
-        <div id="header_main_nav" class="d-flex flex-column position-sticky w-100">
-          <div class="container mt-4">
-            <div class="row row-cols-lg-3 justify-content-between align-items-center">
-              <div class="col">
-                <div class="d-flex flex-row align-items-center gap-3 text-white">
-                  <span>Follow us -</span>
-                  <i class="bi bi-facebook"></i>
-                  <i class="bi bi-instagram"></i>
-                  <i class="bi bi-youtube"></i>
-                  <i class="bi bi-twitter-x"></i>
-                </div>
-              </div>
-              <div class="col text-center">
-                <a class="navbar-brand" href="#">
-                  <img src="assets/imgs/sikwate_logo.png" alt=""  width="auto" height="70">
-                </a>
-              </div>
-              <div class="col">
-                <div class="d-flex flex-row align-items-center justify-content-end gap-4 text-secondary">
-                  <a href="#!" class="text-decoration-none text-white"><i class="bi bi-person-circle"></i></a>
-                  <a href="#!" class="text-decoration-none text-white"><i class="bi bi-cart3"></i></a>
-                  <a href="#!" class="text-decoration-none text-white"><i class="bi bi-search"></i></a>
-                </div>
-              </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sikwate - Chokolate De San Isidro</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content bg-primary">
+        <div class="modal-header border-primary">
+          <h1 class="modal-title fs-5 text-choco-light" id="searchModalLabel"><i
+              class="bi bi-search text-choco-light me-2"></i>Search</h1>
+          <button type="button" class="btn-close bg-choco-light" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#!">
+            <div class="input-group">
+              <input class="form-control form-control bg-choco-light border border-success" type="text"
+                placeholder="What are you looking for?" aria-label="What are you looking for?">
+              <span class="input-group-text bg-success border border-success px-4" id="basic-addon2"><i
+                  class="bi bi-search text-choco-light"></i></span>
             </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <header id="main-header" class="border-bottom-1 position-absolute top-0 left-0 w-100">
+    <nav class="navbar navbar-expand-lg bg-body-transparent">
+      <div class="container">
+        <a class="navbar-brand me-5" href="#">
+          <img src="assets/imgs/sikwate_logo.png" alt="" srcset="" width="auto" height="60">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-lg-4">
+            <li class="nav-item me-4">
+              <a class="nav-link active  text-choco-light" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link text-choco-light" href="products.html">Products</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link text-choco-light" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link text-choco-light" href="about.html">About</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link text-choco-light" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex flex-row align-items-center justify-content-end gap-4 text-secondary">
+            <a href="#!" class="text-decoration-none text-choco-light"><i class="bi bi-person-circle"></i></a>
+            <a href="#!" class="text-decoration-none text-choco-light"><i class="bi bi-cart3 me-1"></i>0</a>
+            <a href="#!" class="text-decoration-none text-choco-light" data-bs-toggle="modal"
+              data-bs-target="#searchModal"><i class="bi bi-search"></i></a>
           </div>
-          <nav class="navbar navbar-expand-lg bg-transparent mt-3">
-              <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-uppercase">
-                    <li class="nav-item me-4">
-                      <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="jumb" class="bg-primary overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 my-auto mx-auto text-center">
+            <h1 class="text-choco-light">About Us</h1>
+
+            <nav aria-label="breadcrumb" class="mt-3">
+                <ol class="breadcrumb justify-content-center align-items-center">
+                    <li class="breadcrumb-item text-success">
+                        <a href="index.html" class="text-decoration-none text-choco-light">Home</a>
                     </li>
-                    <li class="nav-item dropdown me-4">
-                      <a class="nav-link  text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Products <i class="bi bi-chevron-down"></i>
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Shop</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item me-4">
-                      <a class="nav-link text-white" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item me-4">
-                      <a href="#!" class="nav-link  text-white" >Blog</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#!" class="nav-link  text-white" >Contact Us</a>
-                    </li>
-                  </ul>
-                 
-                </div>
-              </div>
-          </nav>
-        </div>
-        <div class="hero-img">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-8 col-lg-10 col-xxl-8 mx-auto text-center">
-                  <h1 class="fw bold libre-regular text-white fw-bold mx-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit</h1>
-                  <p class="text-white mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vel exercitationem deserunt beatae neque eius autem sed ipsam fugit. Enim!</p>
-              </div>
-            </div>
+                    <li class="breadcrumb-item active text-success" aria-current="page">About us</li>
+                </ol>
+            </nav>
           </div>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main>
-      <section id="cacao" class="bg-black" style="background-image: url('assets/imgs/cocao_pattern.png');">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 position-relative">
-              <img id="cacao_img" src="assets/imgs/cacao_png.png" alt="" class="position-absolute">
-            </div>
+    <section id="history">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h1 class="lora fst-italic fw-bold mb-4">Our History</h1>
+            <p class="lh-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae suscipit quia dicta eum voluptatibus esse inventore adipisci quibusdam praesentium qui provident, sit enim error illum. Rerum deserunt reiciendis suscipit recusandae ipsam non iusto laudantium molestiae doloribus labore quas esse provident nulla dignissimos obcaecati, eligendi quo libero commodi culpa nostrum numquam? Magni perspiciatis consectetur, doloremque, odio veniam facilis ipsa corrupti amet, minima maiores officia vitae similique quibusdam. Animi enim quae consectetur quasi ad, atque sed nam pariatur impedit recusandae, dolorum repellendus vel, tenetur nulla quisquam quo quod. Rerum beatae error repellat incidunt commodi? Iusto, ea error! Ullam, sapiente reiciendis! Quidem, repellendus.</p>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="assets/imgs/859631_569835219702909_4882423_o.jpg" alt="" class="img-fluid rounded-5">
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+  </main>
 
-      <section id="feature" class="bg-success">
-        <div class="container">
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center text-center">
-            <div class="col">
-              <img src="assets/imgs/chocolate.png" alt="" class="feature_icon">
-              <h6 class="fw-bold text-black mt-3">Lorem, ipsum</h6>
-            </div>
-            <div class="col">
-              <img src="assets/imgs/cocoa.png" alt="" class="feature_icon">
-              <h6 class="fw-bold text-black mt-3">Lorem, ipsum</h6>
-            </div>
-            <div class="col">
-              <img src="assets/imgs/favorites.png" alt="" class="feature_icon">
-              <h6 class="fw-bold text-black mt-3">Lorem, ipsum</h6>
-            </div>
-            <div class="col">
-              <img src="assets/imgs/farmer.png" alt="" class="feature_icon">
-              <h6 class="fw-bold text-black mt-3">Lorem, ipsum</h6>
-            </div>
+
+
+  <footer class="bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <img src="assets/imgs/sikwate_logo.png" alt="" class="footer-logo" width="auto" height="100">
+          <p class="text-choco-light mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis omnis, nam perferendis maxime cumque delectus nesciunt nisi magni quidem esse neque atque, odit doloremque aspernatur possimus commodi? Unde, incidunt explicabo veniam sunt, error corrupti perferendis reprehenderit ad doloremque commodi officiis! Provident omnis cum ut, doloribus modi hic aliquam sunt distinctio?</p>
+
+          <div class="d-flex flex-row justify-content-start align-items-center mt-5">
+            <a href="#!" class="text-decoration-none text-white me-3">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#!" class="text-decoration-none text-white me-3">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#!" class="text-decoration-none text-white">
+              <i class="bi bi-twitter-x"></i>
+            </a>
           </div>
         </div>
-      </section>
-
-      <section id="prod_feature" class="bg-primary">
-        <div class="container">
-          <!-- title -->
-          <div class="row mb-5">
-            <div class="col-12 col-md-8 mx-auto text-center">
-              <h1 class="text-center text-white fw-bold libre-regular">Our Products</h1>
-              <p class="mt-4 text-success ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, dolorum quibusdam veniam quas amet numquam natus cupiditate explicabo. Nemo, repellat!</p>
-            </div>
-          </div>
-          <!-- category -->
-          <div class="row mb-5 pb-lg-3">
-            <div class="col-12 col-md-4 mb-3">
-              <a href="#!" class="text-decoration-none prod_feat_link">
-                <div class="featured_cat position-relative">
-                  <img src="assets/imgs/119703700_3590233590996375_5451449496862475123_n.jpg" alt="">
-                  <h6 class="bg-black text-white p-3" style="--bs-bg-opacity: .8;"><i class="bi bi-plus me-2"></i>Lorem ipsum dolor sit amet</h6>
-                </div>
-              </a>
-            </div>
-            <div class="col-12 col-md-4 mb-3">
-              <a href="#!" class="text-decoration-none prod_feat_link">
-                <div class="featured_cat position-relative">
-                  <img src="assets/imgs/18491495_1537641032922318_6624997613383711167_o.jpg" alt="">
-                  <h6 class="bg-black text-white p-3" style="--bs-bg-opacity: .8;"><i class="bi bi-plus me-2"></i>Lorem ipsum dolor sit amet</h6>
-                </div>
-              </a>
-            </div>
-            <div class="col-12 col-md-4 mb-3">
-              <a href="#!" class="text-decoration-none prod_feat_link">
-                <div class="featured_cat position-relative">
-                  <img src="assets/imgs/18491495_1537641032922318_6624997613383711167_o.jpg" alt="">
-                  <h6 class="bg-black text-white p-3" style="--bs-bg-opacity: .8;"><i class="bi bi-plus me-2"></i>Lorem ipsum dolor sit amet</h6>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-12 col-md-6">
-              <a href="#!" class="text-decoration-none prod_feat_link">
-                <div class="featured_cat position-relative">
-                  <img src="assets/imgs/334717543_766565625035577_6329320175110869825_n.jpg" alt="">
-                  <h6 class="bg-black text-white p-3" style="--bs-bg-opacity: .8;"><i class="bi bi-plus me-2"></i>Lorem ipsum dolor sit amet</h6>
-                </div>
-              </a>
-            </div>
-            <div class="col-12 col-md-6">
-              <a href="#!" class="text-decoration-none prod_feat_link">
-                <div class="featured_cat position-relative">
-                  <img src="assets/imgs/859631_569835219702909_4882423_o.jpg" alt="">
-                  <h6 class="bg-black text-white p-3" style="--bs-bg-opacity: .8;"><i class="bi bi-plus me-2"></i>Lorem ipsum dolor sit amet</h6>
-                </div>
-              </a>
-            </div>
-          </div>
-          <!-- product -->
-          <div class="row">
-
-            <!-- <div id="featured_title_content" class="mb-4">
-              <div class="d-flex flex-column flex-md-row justify-content-start justify-content-lg-between gap-4 gap-lg-0 align-items-md-center">
-                <div class="d-flex flex-row gap-3 justify-content-start">
-                  <div>
-                    <i class="bi bi-bag display-3 text-white"></i>
-                  </div>
-                  <div>
-                    <h1 class="display-6 fw-bold text-white mt-4 fw-bold">Our Products</h1>
-                    <h6 class="text-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, earum.</h6>
-                  </div>
-                </div>
-               <div class="shop_btn text-end">
-                <a href="shop.html" class="btn btn-success btn-lg px-3 py-3 py-lg-2 px-lg-4 py-lg-3 rounded-0"><i class="bi bi-bag me-2"></i>Shop Now</a>
-               </div>
-              </div>
-            </div> -->
-
-            <div id="prod_featured_carousel" class="owl-carousel owl-theme">
-
-              <div class="item">
-                <div class="card border-0 bg-gray rounded-0">
-                  <a href="product_single.html" class="text-decoration-none">
-                      <img src="assets/imgs/149755784_4002690939750636_6938137995748359691_n.jpg" alt="" class="img-fluid">
-                  </a>
-                  <div class="card-body py-4">
-                        <div class="Product_star">
-                          <div class="d-flex flex-wrap flex-row w-50 text-warning">
-                              <i class="bi bi-star-fill fs-6"></i>
-                              <i class="bi bi-star-fill fs-6"></i>
-                              <i class="bi bi-star-fill fs-6"></i>
-                              <i class="bi bi-star-fill fs-6"></i>
-                              <i class="bi bi-star fs-6"></i>
-                          </div>
-                        </div>
-                        <div class="product_title mt-2">
-                          <h4 class="text-primary fw-bold">₱250.00</h4>
-                          <h6 class="fw-bold text-success">Lorem ipsum dolor sit</h6>
-                        </div>
-                       
-                        <div id="product_btn" class="col-md-10 w-100 text-start mt-4">
-                            <a href="#!" class="btn btn-outline-primary py-2 px-3"><i class="bi bi-plus me-2"></i>Add to Cart</a>
-                        </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="card border-0 bg-gray rounded-0">
-                  <a href="product_single.html" class="text-decoration-none">
-                      <img src="assets/imgs/149755784_4002690939750636_6938137995748359691_n.jpg" alt="" class="img-fluid">
-                  </a>
-                  <div class="card-body py-4">
-                        <div class="Product_star">
-                          <div class="d-flex flex-wrap flex-row w-50 text-warning">
-                              <i class="bi bi-star-fill fs-6"></i>
-                              <i class="bi bi-star-fill fs-6"></i>
-                              <i class="bi bi-star-fill fs-6"></i>
-                              <i class="bi bi-star-fill fs-6"></i>
-                              <i class="bi bi-star fs-6"></i>
-                          </div>
-                        </div>
-                        <div class="product_title mt-2">
-                          <h4 class="text-primary fw-bold">₱500.00</h4>
-                          <h6 class="fw-bold text-success">Lorem ipsum dolor sit amet</h6>
-                        </div>
-                       
-                        <div id="product_btn" class="col-md-10 w-100 text-start mt-4">
-                            <a href="product_single.html" class="btn btn-outline-primary py-2 px-3"><i class="bi bi-plus me-2"></i>Add to Cart</a>
-                        </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="card border-0 bg-gray rounded-0">
-                  <a href="product_single.html" class="text-decoration-none">
-                      <img src="assets/imgs/149755784_4002690939750636_6938137995748359691_n.jpg" alt="" class="img-fluid">
-                  </a>
-                  <div class="card-body py-4">
-                        <div class="Product_star">
-                          <div class="d-flex flex-wrap flex-row w-50 text-warning">
-                              <i class="bi bi-star-fill fs-6"></i>
-                              <i class="bi bi-star-fill fs-6"></i>
-                              <i class="bi bi-star-fill fs-6"></i>
-                              <i class="bi bi-star-fill fs-6"></i>
-                              <i class="bi bi-star fs-6"></i>
-                          </div>
-                        </div>
-                        <div class="product_title mt-2">
-                          <h4 class="text-primary fw-bold">₱450.00</h4>
-                          <h6 class="fw-bold text-success">Lorem ipsum dolor sit amet</h6>
-                        </div>
-                       
-                        <div id="product_btn" class="col-md-10 w-100 text-start mt-4">
-                            <a href="product_single.html" class="btn btn-outline-primary py-2 px-3"><i class="bi bi-plus me-2"></i>Add to Cart</a>
-                        </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="card border-0 bg-gray rounded-0">
-                  <a href="product_single.html" class="text-decoration-none">
-                      <img src="assets/imgs/149755784_4002690939750636_6938137995748359691_n.jpg" alt="" class="img-fluid">
-                  </a>
-                  <div class="card-body py-4">
-                        <div class="Product_star">
-                          <div class="d-flex flex-wrap flex-row w-50 text-warning">
-                              <i class="bi bi-star-fill fs-6"></i>
-                              <i class="bi bi-star-fill fs-6"></i>
-                              <i class="bi bi-star-fill fs-6"></i>
-                              <i class="bi bi-star-fill fs-6"></i>
-                              <i class="bi bi-star fs-6"></i>
-                          </div>
-                        </div>
-                        <div class="product_title mt-2">
-                          <h4 class="text-primary fw-bold">₱275.00</h4>
-                          <h6 class="fw-bold text-success">Lorem ipsum dolor sit amet</h6>
-                        </div>
-                       
-                        <div id="product_btn" class="col-md-10 w-100 text-start mt-4">
-                            <a href="product_single.html" class="btn btn-outline-primary py-2 px-3"><i class="bi bi-plus me-2"></i>Add to Cart</a>
-                        </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="card border-0 bg-gray rounded-0">
-                  <a href="product_single.html" class="text-decoration-none">
-                      <img src="assets/imgs/149755784_4002690939750636_6938137995748359691_n.jpg" alt="" class="img-fluid">
-                  </a>
-                  <div class="card-body py-4">
-                        <div class="Product_star">
-                          <div class="d-flex flex-wrap flex-row w-50 text-warning">
-                              <i class="bi bi-star-fill fs-6"></i>
-                              <i class="bi bi-star-fill fs-6"></i>
-                              <i class="bi bi-star-fill fs-6"></i>
-                              <i class="bi bi-star-fill fs-6"></i>
-                              <i class="bi bi-star fs-6"></i>
-                          </div>
-                        </div>
-                        <div class="product_title mt-2">
-                          <h4 class="text-primary fw-bold">₱275.00</h4>
-                          <h6 class="fw-bold text-success">Lorem ipsum dolor sit amet</h6>
-                        </div>
-                       
-                        <div id="product_btn" class="col-md-10 w-100 text-start mt-4">
-                            <a href="product_single.html" class="btn btn-outline-primary py-2 px-3"><i class="bi bi-plus me-2"></i>Add to Cart</a>
-                        </div>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
-
-            <div class="col-12 text-center mt-5 pt-lg-5">
-              <a href="#!" class="btn btn-success px-4 py-3"><i class="bi bi-bag me-2"></i>View all products</a>
-            </div>
-          </div>
+        <div class="col-12 col-md-6 col-lg-4 mx-auto">
+          <h5 class="fw-bold text-choco-light mb-5">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="nav-link mb-4">
+              <a href="#!" class="text-decoration-none text-choco-light">Home</a>
+            </li>
+            <li class="nav-link mb-4">
+              <a href="#!" class="text-decoration-none text-choco-light">Products</a>
+            </li>
+            <li class="nav-link mb-4">
+              <a href="#!" class="text-decoration-none text-choco-light">Blog</a>
+            </li>
+            <li class="nav-link mb-4">
+              <a href="#!" class="text-decoration-none text-choco-light">About</a>
+            </li>
+            <li class="nav-link">
+              <a href="#!" class="text-decoration-none text-choco-light">Contact</a>
+            </li>
+          </ul>
         </div>
-      </section>
-
-      <section id="welcome" class="bg-gray">
-        <div class="container">
-          <div class="row">
-
-            <div class="col-12 col-md-6">
-              <div class="position-relative">
-                <span>
-                  <img src="assets/imgs/icon1-02.png" alt="a" width="auto" height="90">
-                </span>
-                <h2 class="fw-bold libre-regular text-secondary display-5 mt-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit
-                </h2>
-                <p class="lh-lg mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, officiis minima? Rerum temporibus repellendus adipisci, fuga magnam corrupti odio atque quam nam, voluptas enim perferendis ipsam doloremque, facilis ullam delectus? Aperiam neque cupiditate animi. Ea, provident! Aliquam dicta numquam voluptatem autem vero modi blanditiis perspiciatis iure, unde sed optio perferendis quo incidunt mollitia natus totam nemo. Suscipit libero esse iusto, unde, velit tenetur non laborum molestiae ipsum explicabo temporibus asperiores inventore. Laborum itaque quos officia ipsa explicabo repellat earum, natus unde saepe asperiores pariatur, doloribus quae ut cum nesciunt quis.</p>
-              </div>
-            </div>
+      </div>
+    </div>
+  </footer>
 
 
-            <div class="col-12 col-md-6">
-              <img src="assets/imgs/244577687_1548563278811328_3736844293470326400_n.jpg" alt="" class="img-fluid">
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="products">
-        <div class="container">
-          <div class="row">
-
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="assets/js/sikwate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/js/sikwate.js"></script>
 </body>
+
 </html>
