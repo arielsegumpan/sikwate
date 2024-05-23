@@ -290,7 +290,7 @@ $trans: .6s ease;
       }
     }
     section#single-jumb {
-      padding-top: 2.6rem;
+      padding-top: 2.8rem;
       height: 50svh;
       position: relative;
       
@@ -1013,6 +1013,11 @@ $trans: .6s ease;
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
+  header{
+    nav{
+      background-color: $prim;
+    }
+  }
   main{
     // HOME PAGE
     section#jumbotron{
