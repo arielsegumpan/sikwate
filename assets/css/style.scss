@@ -407,7 +407,33 @@ $trans: .6s ease;
 
     // ABOUT PAGE
     section#history{
-      padding: 7rem 0;
+      padding: 5rem 0;
+      img{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+    section#gallery{
+      padding: 5rem 0;
+      img{
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 150px;
+      }
+    }
+
+    // CONTACT PAGE
+    section#contact{
+      padding: 5rem 0;
+      iframe.contact-map{
+        height: 350px;
+      }
     }
   }
 
@@ -416,7 +442,9 @@ $trans: .6s ease;
     // padding: 5rem 0 0 0;
 
     .container:nth-child(1){
-      padding: 5rem 0 2rem 0;
+      .row{
+        padding: 5rem 0 2rem 0;
+      }
     }
 
     .footer-logo{
@@ -611,7 +639,24 @@ $trans: .6s ease;
 
     // ABOUT PAGE
     section#history{
-      padding: 7rem 0;
+      padding: 5rem 0;
+      img{
+        height: 340px;
+      }
+    }
+    section#gallery{
+      padding: 5rem 0;
+      img{
+        height: 220px;
+      }
+    }
+
+    // CONTACT PAGE
+    section#contact{
+      padding: 5rem 0;
+      iframe.contact-map{
+        height: 400px;
+      }
     }
   }
 
@@ -807,8 +852,25 @@ $trans: .6s ease;
 
     // ABOUT PAGE
     section#history{
-      padding: 7rem 0;
+      padding: 6rem 0;
+      img{
+        height: 350px;
+      }
     }
+    section#gallery{
+      padding: 6rem 0;
+      img{
+        height: 260px;
+      }
+    }
+
+    // CONTACT PAGE
+    section#contact{
+      padding: 6rem 0;
+      iframe.contact-map{
+        height: 400px;
+    }
+  }
   }
 
    // FOOTER
@@ -993,7 +1055,25 @@ $trans: .6s ease;
 
     // ABOUT PAGE
     section#history{
+      padding: 6rem 0;
+      img{
+        height: 400px;
+      }
+    }
+    section#gallery{
+      padding: 6rem 0;
+      img{
+        height: 230px;
+      }
+    }
+
+
+     // CONTACT PAGE
+     section#contact{
       padding: 7rem 0;
+      iframe.contact-map{
+        height: 600px;
+      }
     }
   }
 
@@ -1196,6 +1276,23 @@ $trans: .6s ease;
     // ABOUT PAGE
     section#history{
       padding: 7rem 0;
+      img{
+        height:500px;
+      }
+    }
+    section#gallery{
+      padding: 7rem 0;
+      img{
+        height: 245px;
+      }
+    }
+
+    // CONTACT PAGE
+    section#contact{
+      padding: 7rem 0;
+      iframe.contact-map{
+        height: 600px;
+      }
     }
   }
 
@@ -1338,7 +1435,26 @@ $trans: .6s ease;
     // ABOUT PAGE
     section#history{
       padding: 7rem 0;
+      img{
+        height:500px;
+      }
     }
+    section#gallery{
+      padding: 7rem 0;
+      img{
+        height: 270px;
+      }
+    }
+   
+
+    // CONTACT PAGE
+    section#contact{
+      padding: 7rem 0;
+      iframe.contact-map{
+        height: 600px;
+      }
+    }
+
   }
 
    // FOOTER
