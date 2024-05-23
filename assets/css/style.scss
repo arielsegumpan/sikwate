@@ -148,12 +148,10 @@ $trans: .6s ease;
   main{
     // HOME PAGE
     section#jumbotron{
-      // padding-top: 2.6rem;
-      // height: calc(110svh - 96px);
-      height: 130svh;
+      height: 125svh;
 
       img.bg-jumb-img{
-        height: 130svh;
+        height: 125svh;
         width: 100%;
         object-fit: cover;
         opacity: .05;
@@ -1279,8 +1277,7 @@ $trans: .6s ease;
           height: 260px;
         }
       }
-    } 
-cvbcvb
+    }
 
     section#single-blog {
      padding: 13rem 0 8rem 0;
