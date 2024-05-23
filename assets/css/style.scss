@@ -436,10 +436,10 @@ $trans: .6s ease;
   main{
     // HOME PAGE
     section#jumbotron{
-      height: 250svh;
+      height: 240svh;
 
       img.bg-jumb-img{
-        height: 250svh;
+        height: 240svh;
         width: 100%;
         object-fit: cover;
         opacity: .05;
@@ -454,7 +454,7 @@ $trans: .6s ease;
       .container{
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -46%);
+        transform: translate(-50%, -48%);
       }
     }
 
