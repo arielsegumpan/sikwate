@@ -48,16 +48,22 @@
 
 
   <header id="main-header" class="border-bottom-1 position-absolute top-0 left-0 w-100">
-    <nav class="navbar navbar-expand-lg bg-body-transparent">
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand me-5" href="#">
+        <a class="navbar-brand me-5" href="index.html">
           <img src="assets/imgs/sikwate_logo.png" alt="" srcset="" width="auto" height="60">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <div class="menu-icon">
+            <input class="menu-icon__cheeckbox" type="checkbox" />
+            <div>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-lg-4">
             <li class="nav-item me-4">
               <a class="nav-link active  text-choco-light" aria-current="page" href="index.html">Home</a>
@@ -75,7 +81,7 @@
               <a class="nav-link text-choco-light" href="contact.html">Contact</a>
             </li>
           </ul>
-          <div class="d-flex flex-row align-items-center justify-content-end gap-4 text-secondary">
+          <div class="d-flex flex-row align-items-center justify-content-start justify-content-lg-end gap-3 gap-lg-4 text-secondary">
             <a href="#!" class="text-decoration-none text-choco-light"><i class="bi bi-person-circle"></i></a>
             <a href="#!" class="text-decoration-none text-choco-light"><i class="bi bi-cart3 me-1"></i>0</a>
             <a href="#!" class="text-decoration-none text-choco-light" data-bs-toggle="modal"
@@ -93,14 +99,14 @@
       <div class="bg-overlay"></div>
       <div class="container position-absolute">
         <div class="row">
-          <div class="col-12 col-md-6 ms-auto my-auto">
-            <h1 class="text-choco-light"> <em> <b> Lorem ipsum dolor </b> </em> sit amet consectetur adipisicing elit.
+          <div class="col-12 col-md-6 ms-auto my-auto order-2 order-md-1 text-center text-md-start">
+            <h1 class="text-choco-light lora"> <em> <b> Lorem ipsum dolor </b> </em> sit amet consectetur adipisicing elit.
               Illum, quasi!</h1>
-            <p class="text-choco-light mt-4 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quam
+            <p class="text-choco-light mt-4 mb-4 mb-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quam
               adipisci ea porro amet dolor?</p>
             <a href="#!" class="btn btn-outline-success rounded-5 px-5 py-3">Learn More</a>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 order-1 order-md-2 mb-4 mb-lg-0">
             <img src="assets/imgs/119703700_3590233590996375_5451449496862475123_n.jpg" alt=""
               class="img-fluid jumb-img rounded-5" lazyload>
           </div>
@@ -108,39 +114,54 @@
       </div>
     </section>
 
-    <section id="service_feature" class="bg-dark-brown py-5">
+    <section id="service_feature" class="bg-dark-brown">
       <div class="container px-lg-5">
-        <div class="row row-cols-2 g-4 row-cols-lg-4 align-items-center">
+        <div class="row row-cols-1 row-cols-sm-2 g-4 row-cols-lg-4 align-items-center">
 
           <div class="col">
-            <div class="d-flex flex-row flex-row-md align-items-center gap-3 text-white">
+            <div class="d-flex flex-row flex-row-md align-items-center gap-3 text-white justify-content-center">
               <img src="assets/imgs/chocolate.png" alt="" class="img-fluid" width="50" height="auto">
               <h6 class="fw-bold">Lorem, ipsum dolor</h6>
             </div>
           </div>
 
           <div class="col">
-            <div class="d-flex flex-row flex-row-md align-items-center gap-3 text-white">
+            <div class="d-flex flex-row flex-row-md align-items-center gap-3 text-white justify-content-center">
               <img src="assets/imgs/cocoa.png" alt="" class="img-fluid" width="50" height="auto">
               <h6 class="fw-bold">Lorem, ipsum dolor</h6>
             </div>
           </div>
 
           <div class="col">
-            <div class="d-flex flex-row flex-row-md align-items-center gap-3 text-white">
+            <div class="d-flex flex-row flex-row-md align-items-center gap-3 text-white justify-content-center">
               <img src="assets/imgs/favorites.png" alt="" class="img-fluid" width="50" height="auto">
               <h6 class="fw-bold">Lorem, ipsum dolor</h6>
             </div>
           </div>
 
           <div class="col">
-            <div class="d-flex flex-row flex-row-md align-items-center gap-3 text-white">
+            <div class="d-flex flex-row flex-row-md align-items-center gap-3 text-white justify-content-center">
               <img src="assets/imgs/farmer.png" alt="" class="img-fluid" width="50" height="auto">
               <h6 class="fw-bold">Lorem, ipsum dolor</h6>
             </div>
           </div>
 
         </div>
+      </div>
+    </section>
+
+    <section id="welcome" class="bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 pe-lg-4">
+            <img src="assets/imgs/18491495_1537641032922318_6624997613383711167_o.jpg" alt="" class="img-fluid rounded-5 object-fit-cover">
+          </div>
+          <div class="col-12 col-md-6 text-center text-md-start mt-5 mt-md-0">
+            <h1 class="fw-bold lora text-choco-light">Lorem ipsum dolor sit amet consectetur.</h1>
+            <p class="text-choco-light mt-4 lh-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias laboriosam quasi illo pariatur repudiandae dicta eius mollitia sequi officia quo veniam, ducimus possimus optio vel voluptatum nisi blanditiis ipsa unde tenetur placeat. Distinctio maiores ad iure, iusto repellat provident, doloribus cum necessitatibus eligendi eaque officia sequi aliquam excepturi temporibus praesentium! Illum eaque ipsa, natus rerum reiciendis nam recusandae itaque quos harum sed, vel facere laboriosam iste. Reiciendis fugiat exercitationem ducimus?</p>
+          </div>
+        </div>
+        
       </div>
     </section>
 
@@ -179,13 +200,13 @@
         </div>
 
         <!-- categories -->
-        <div class="row row-cols-2 row-cols-lg-4 g-2 g-md-4 mt-5 mt-lg-3">
+        <div class="row row-cols-2 row-cols-lg-4 g-3 g-md-5 g-lg-4 mt-5 mt-md-2 mt-lg-3">
 
           <div class="col text-center">
             <a href="#!" class="text-decoration-none">
               <div class="card border-0 position-relative overflow-hidden rounded-5 bg-transparent feat-card">
-                <img src="assets/imgs/859631_569835219702909_4882423_o.jpg" alt="" class="img-fluid ">
-                <h5 class="text-white mt-4 text-start position-absolute bottom-0 start-0 ps-3 pb-2">Lorem ipsum dolor
+                <img src="assets/imgs/859631_569835219702909_4882423_o.jpg" alt="" class="img-fluid cat-img">
+                <h5 class="text-white mt-4 text-start position-absolute bottom-0 start-0 px-3 pb-2">Lorem ipsum dolor
                   sit amet (250)</h5>
                 <i class="bi bi-eye fs-4 me-4 mt-2 text-white position-absolute top-0 end-0"></i>
               </div>
@@ -195,8 +216,8 @@
           <div class="col text-center">
             <a href="#!" class="text-decoration-none">
               <div class="card border-0 position-relative overflow-hidden rounded-5 bg-transparent feat-card">
-                <img src="assets/imgs/18491495_1537641032922318_6624997613383711167_o.jpg" alt="" class="img-fluid ">
-                <h5 class="text-white mt-4 text-start position-absolute bottom-0 start-0 ps-3 pb-2">Lorem ipsum dolor
+                <img src="assets/imgs/18491495_1537641032922318_6624997613383711167_o.jpg" alt="" class="img-fluid cat-img">
+                <h5 class="text-white mt-4 text-start position-absolute bottom-0 start-0 px-3 pb-2">Lorem ipsum dolor
                   sit amet (250)</h5>
                 <i class="bi bi-eye fs-4 me-4 mt-2 text-white position-absolute top-0 end-0"></i>
               </div>
@@ -206,8 +227,8 @@
           <div class="col text-center">
             <a href="#!" class="text-decoration-none">
               <div class="card border-0 position-relative overflow-hidden rounded-5 bg-transparent feat-card">
-                <img src="assets/imgs/334717543_766565625035577_6329320175110869825_n.jpg" alt="" class="img-fluid ">
-                <h5 class="text-white mt-4 text-start position-absolute bottom-0 start-0 ps-3 pb-2">Lorem ipsum dolor
+                <img src="assets/imgs/334717543_766565625035577_6329320175110869825_n.jpg" alt="" class="img-fluid cat-img">
+                <h5 class="text-white mt-4 text-start position-absolute bottom-0 start-0 px-3 pb-2">Lorem ipsum dolor
                   sit amet (250)</h5>
                 <i class="bi bi-eye fs-4 me-4 mt-2 text-white position-absolute top-0 end-0"></i>
               </div>
@@ -217,8 +238,8 @@
           <div class="col text-center">
             <a href="#!" class="text-decoration-none">
               <div class="card border-0 position-relative overflow-hidden rounded-5 bg-transparent feat-card">
-                <img src="assets/imgs/img_1.jpg" alt="" class="img-fluid ">
-                <h5 class="text-white mt-4 text-start position-absolute bottom-0 start-0 ps-3 pb-2">Lorem ipsum dolor
+                <img src="assets/imgs/img_1.jpg" alt="" class="img-fluid cat-img">
+                <h5 class="text-white mt-4 text-start position-absolute bottom-0 start-0 px-3 pb-2">Lorem ipsum dolor
                   sit amet (250)</h5>
                 <i class="bi bi-eye fs-4 me-4 mt-2 text-white position-absolute top-0 end-0"></i>
               </div>
@@ -228,8 +249,8 @@
           <div class="col text-center">
             <a href="#!" class="text-decoration-none">
               <div class="card border-0 position-relative overflow-hidden rounded-5 bg-transparent feat-card">
-                <img src="assets/imgs/cacao_seed_2.jpg" alt="" class="img-fluid ">
-                <h5 class="text-white mt-4 text-start position-absolute bottom-0 start-0 ps-3 pb-2">Lorem ipsum dolor
+                <img src="assets/imgs/cacao_seed_2.jpg" alt="" class="img-fluid cat-img">
+                <h5 class="text-white mt-4 text-start position-absolute bottom-0 start-0 px-3 pb-2">Lorem ipsum dolor
                   sit amet (250)</h5>
                 <i class="bi bi-eye fs-4 me-4 mt-2 text-white position-absolute top-0 end-0"></i>
               </div>
@@ -239,8 +260,8 @@
           <div class="col text-center">
             <a href="#!" class="text-decoration-none">
               <div class="card border-0 position-relative overflow-hidden rounded-5 bg-transparent feat-card">
-                <img src="assets/imgs/360_F_636943042_rAzICVhpspaPC8UjnqENTndr6t8C52fC.jpg" alt="" class="img-fluid ">
-                <h5 class="text-white mt-4 text-start position-absolute bottom-0 start-0 ps-3 pb-2">Lorem ipsum dolor
+                <img src="assets/imgs/360_F_636943042_rAzICVhpspaPC8UjnqENTndr6t8C52fC.jpg" alt="" class="img-fluid cat-img">
+                <h5 class="text-white mt-4 text-start position-absolute bottom-0 start-0 px-3 pb-2">Lorem ipsum dolor
                   sit amet (250)</h5>
                 <i class="bi bi-eye fs-4 me-4 mt-2 text-white position-absolute top-0 end-0"></i>
               </div>
@@ -250,8 +271,8 @@
           <div class="col text-center">
             <a href="#!" class="text-decoration-none">
               <div class="card border-0 position-relative overflow-hidden rounded-5 bg-transparent feat-card">
-                <img src="assets/imgs/119703700_3590233590996375_5451449496862475123_n.jpg" alt="" class="img-fluid ">
-                <h5 class="text-white mt-4 text-start position-absolute bottom-0 start-0 ps-3 pb-2">Lorem ipsum dolor
+                <img src="assets/imgs/119703700_3590233590996375_5451449496862475123_n.jpg" alt="" class="img-fluid cat-img">
+                <h5 class="text-white mt-4 text-start position-absolute bottom-0 start-0 px-3 pb-2">Lorem ipsum dolor
                   sit amet (250)</h5>
                 <i class="bi bi-eye fs-4 me-4 mt-2 text-white position-absolute top-0 end-0"></i>
               </div>
@@ -261,8 +282,8 @@
           <div class="col text-center">
             <a href="#!" class="text-decoration-none">
               <div class="card border-0 position-relative overflow-hidden rounded-5 bg-transparent feat-card">
-                <img src="assets/imgs/istockphoto-1194639314-612x612.jpg" alt="" class="img-fluid ">
-                <h5 class="text-white mt-4 text-start position-absolute bottom-0 start-0 ps-3 pb-2">Lorem ipsum dolor
+                <img src="assets/imgs/istockphoto-1194639314-612x612.jpg" alt="" class="img-fluid cat-img">
+                <h5 class="text-white mt-4 text-start position-absolute bottom-0 start-0 px-3 pb-2">Lorem ipsum dolor
                   sit amet (250)</h5>
                 <i class="bi bi-eye fs-4 me-4 mt-2 text-white position-absolute top-0 end-0"></i>
               </div>
@@ -272,26 +293,21 @@
         </div>
         <!-- recent products -->
         <div class="row">
-          <div class="col-12 col-lg-4 order-2 order-lg-1 mt-5 mt-lg-0">
-            <div class="d-flex flex-row gap-3 align-items-top justify-content-start">
+          <div class="col-12 col-lg-4 mt-5 mt-lg-0 text-center text-lg-start">
+            <h1 class="fw-bold text-primary lora text-primary"><i
+              class="bi bi-bookmark-star text-primary me-2"></i>Featured Products</h1>
+            <h6 class="text-success mt-4 mt-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+              repudiandae, eius distinctio eum quos reiciendis eos? Adipisci provident quaerat odit.</h6>
+            <a href="shop.html" class="btn btn-primary btn-md px-4 py-3 mt-3 mt-4 mt-lg-5 rounded-5"><i
+                class="bi-cart3 me-3"></i>All Products</a>
 
-              <div>
-                <h1 class="fw-bold text-primary lora text-primary"><i
-                    class="bi bi-bookmark-star text-primary me-2"></i>Featured Products</h1>
-                <h6 class="text-success mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-                  repudiandae, eius distinctio eum quos reiciendis eos? Adipisci provident quaerat odit.</h6>
-                <a href="shop.html" class="btn btn-primary btn-md px-4 py-3 mt-3 mt-md-5 rounded-5"><i
-                    class="bi-cart3 me-3"></i>All Products</a>
-
-                <div class="d-flex flex-row justify-content-start gap-1 mt-5">
-                  <button id="prevBtn" class="btn btn-outline-success"><i class="bi bi-arrow-left fs-5"></i></button>
-                  <button id="nextBtn" class="btn btn-outline-success"><i class="bi bi-arrow-right fs-5"></i></button>
-                </div>
-              </div>
+            <div class="d-flex flex-row justify-content-center justify-content-lg-start gap-1 mt-4 mt-lg-5">
+              <button id="prevBtn" class="btn btn-outline-success"><i class="bi bi-arrow-left fs-5"></i></button>
+              <button id="nextBtn" class="btn btn-outline-success"><i class="bi bi-arrow-right fs-5"></i></button>
             </div>
           </div>
 
-          <div class="col-12 col-lg-8 order-1 order-lg-2 ">
+          <div class="col-12 col-lg-8 mt-5 mt-lg-0">
             <div id="featured_prod_slide" class="owl-carousel owl-theme">
 
               <div class="item">
@@ -399,7 +415,7 @@
     <section id="services" class="bg-primary">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-8 col-xl-8 mx-auto">
+          <div class="col-12 col-md-10 col-xl-8 mx-auto">
             <div class="text-center">
               <span><img src="assets/imgs/icon1-02.png" alt=""></span>
               <h2 class="text-success lora mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
@@ -490,20 +506,20 @@
       </div>
     </section>
 
-    <section id="blog" class="bg-choco-light">
+    <section id="index-blog" class="bg-choco-light">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-7 mx-auto text-center mb-5">
+          <div class="col-12 col-md-10 col-lg-10 col-xl-8 mx-auto text-center mb-4 mb-lg-5">
             <h1 class="fw-bold text-primary lora">Our Blog</h1>
             <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. A quisquam cumque animi porro
               repudiandae facere assumenda accusantium optio veritatis. Veritatis?</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
             <a href="#!" class="text-decoration-none">
               <div class="card border-0 bg-transparent">
-                <img src="assets/imgs/360_F_636943042_rAzICVhpspaPC8UjnqENTndr6t8C52fC.jpg" alt="" class="img-fluid">
+                <img src="assets/imgs/360_F_636943042_rAzICVhpspaPC8UjnqENTndr6t8C52fC.jpg" alt="" class="img-fluid rounded-5">
                 <div class="card-body">
                   
                     <h5 class="lora fw-bold text-primary">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -518,10 +534,10 @@
             </a>
           </div>
 
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
             <a href="#!" class="text-decoration-none">
               <div class="card border-0 bg-transparent">
-                <img src="assets/imgs/360_F_636943042_rAzICVhpspaPC8UjnqENTndr6t8C52fC.jpg" alt="" class="img-fluid">
+                <img src="assets/imgs/360_F_636943042_rAzICVhpspaPC8UjnqENTndr6t8C52fC.jpg" alt="" class="img-fluid rounded-5">
                 <div class="card-body">
                   
                     <h5 class="lora fw-bold text-primary">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -536,10 +552,10 @@
             </a>
           </div>
 
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <a href="#!" class="text-decoration-none">
               <div class="card border-0 bg-transparent">
-                <img src="assets/imgs/360_F_636943042_rAzICVhpspaPC8UjnqENTndr6t8C52fC.jpg" alt="" class="img-fluid">
+                <img src="assets/imgs/360_F_636943042_rAzICVhpspaPC8UjnqENTndr6t8C52fC.jpg" alt="" class="img-fluid rounded-5">
                 <div class="card-body">
                   
                     <h5 class="lora fw-bold text-primary">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -558,15 +574,16 @@
       </div>
     </section>
 
-    <section id="newsletter" class="bg-dark-brown">
+    <section id="newsletter" class="bg-dark-brown position-relative">
+      <img src="assets/imgs/334717543_766565625035577_6329320175110869825_n.jpg" alt="" class="nwsletter">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-7">
+          <div class="col-12 col-md-6 col-lg-7 text-center text-md-start mb-4 mb-md-0">
             <h2 class="fw-bold text-white"><i class="bi bi-send-fill me-2"></i>Subscribe To Our Newsletter</h2>
             <p class="text-white mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vero vel rem
               reprehenderit, repellat repudiandae voluptates ea consequuntur harum sed.</p>
           </div>
-          <div class="col-12 col-md-5 text-end">
+          <div class="col-12 col-md-6 col-lg-5 text-end my-auto">
             <form action="#!">
               <div class="input-group mb-3">
                 <input type="email" class="form-control py-3 rounded-start-4" placeholder="Your email..."
@@ -578,6 +595,7 @@
           </div>
         </div>
       </div>
+      <div class="bg-overlay"></div>
     </section>
 
 
@@ -588,24 +606,15 @@
   <footer class="bg-primary">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6 col-lg-4">
-          <img src="assets/imgs/sikwate_logo.png" alt="" class="footer-logo" width="auto" height="100">
-          <p class="text-choco-light mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis omnis, nam perferendis maxime cumque delectus nesciunt nisi magni quidem esse neque atque, odit doloremque aspernatur possimus commodi? Unde, incidunt explicabo veniam sunt, error corrupti perferendis reprehenderit ad doloremque commodi officiis! Provident omnis cum ut, doloribus modi hic aliquam sunt distinctio?</p>
-
-          <div class="d-flex flex-row justify-content-start align-items-center mt-5">
-            <a href="#!" class="text-decoration-none text-white me-3">
-              <i class="bi bi-facebook"></i>
-            </a>
-            <a href="#!" class="text-decoration-none text-white me-3">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="#!" class="text-decoration-none text-white">
-              <i class="bi bi-twitter-x"></i>
-            </a>
-          </div>
+        <div class="col-12 col-md-6 col-lg-3 text-center text-md-start">
+         <a href="about.html" class="text-decoration-none">
+          <img src="assets/imgs/sikwate_logo.png" alt="" class="footer-logo">
+         </a>
+          <!-- <p class="text-choco-light mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis omnis, nam perferendis maxime cumque delectus nesciunt nisi magni quidem esse neque atque, odit doloremque aspernatur possimus commodi? Unde, incidunt explicabo veniam sunt, error corrupti perferendis reprehenderit ad doloremque commodi officiis! Provident omnis cum ut, doloribus modi hic aliquam sunt distinctio?</p> -->
+          
         </div>
-        <div class="col-12 col-md-6 col-lg-4 mx-auto">
-          <h5 class="fw-bold text-choco-light mb-5">Quick Links</h5>
+        <div class="col-12 col-md-6 col-lg-3 text-center text-md-start mt-5 mt-md-0">
+          <h5 class="fw-bold text-choco-light mb-4 mb-lg-5 lora">Quick Links</h5>
           <ul class="list-unstyled">
             <li class="nav-link mb-4">
               <a href="#!" class="text-decoration-none text-choco-light">Home</a>
@@ -623,6 +632,54 @@
               <a href="#!" class="text-decoration-none text-choco-light">Contact</a>
             </li>
           </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 text-center text-md-start mt-5 mt-lg-0">
+          <h5 class="fw-bold text-choco-light mb-4 mb-lg-5 lora">Our Products</h5>
+          <ul class="list-unstyled">
+            <li class="nav-link mb-4">
+              <a href="#!" class="text-decoration-none text-choco-light">Lorem, ipsum dolor</a>
+            </li>
+            <li class="nav-link mb-4">
+              <a href="#!" class="text-decoration-none text-choco-light">Lorem, ipsum dolor</a>
+            </li>
+            <li class="nav-link mb-4">
+              <a href="#!" class="text-decoration-none text-choco-light">Lorem, ipsum dolor</a>
+            </li>
+            <li class="nav-link mb-4">
+              <a href="#!" class="text-decoration-none text-choco-light">Lorem, ipsum dolor</a>
+            </li>
+            <li class="nav-link">
+              <a href="#!" class="text-decoration-none text-choco-light">Lorem, ipsum dolor</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 text-center text-md-start mt-5 mt-lg-0">
+          <h5 class="fw-bold text-choco-light lora">Connect Us</h5>
+          <div class="d-flex flex-row justify-content-center justify-content-md-start align-items-center mt-3">
+            <a href="#!" class="text-decoration-none text-white me-4">
+              <i class="bi bi-facebook fs-5"></i>
+            </a>
+            <a href="#!" class="text-decoration-none text-white me-4">
+              <i class="bi bi-instagram fs-5"></i>
+            </a>
+            <a href="#!" class="text-decoration-none text-white">
+              <i class="bi bi-twitter-x fs-5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row pb-3">
+        <div class="col-12 text-center mt-4">
+          <div class="d-flex flex-column flex-md-row justify-content-between">
+            <p class="text-choco-light">Copyright &copy; 2023. All Rights Reserved.</p>
+
+            <div>
+              <a href="#!" class="link-underline-choco-light text-choco-light me-3">Terms</a>
+              <a href="#!" class="link-underline-choco-light text-choco-light">Privacy Policy</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
