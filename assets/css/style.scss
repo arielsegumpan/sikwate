@@ -148,10 +148,10 @@ $trans: .6s ease;
   main{
     // HOME PAGE
     section#jumbotron{
-      height: 125svh;
+      height: 120svh;
 
       img.bg-jumb-img{
-        height: 125svh;
+        height: 120svh;
         width: 100%;
         object-fit: cover;
         opacity: .05;
@@ -1090,6 +1090,7 @@ $trans: .6s ease;
     }
   }
  }
+
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
